@@ -12,7 +12,8 @@ ninja -C build`
 
 bssl is in ./build
 
-to run server: 
+**to run server:**
+====================================================
 `./start_server.sh`
 
 in a separate window, htop (we are looking at cumulative CPU time):
@@ -21,7 +22,8 @@ in a separate window, htop (we are looking at cumulative CPU time):
 
 `htop -p <pid>`
 
-to run client:
+**to run client:**
+====================================================
 The first parameter is the number of connections to the server.
 The second parameter is the type of key exchange (classical or hybrid)
 
