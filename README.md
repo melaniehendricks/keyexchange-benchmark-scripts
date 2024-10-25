@@ -5,14 +5,15 @@
 linux: `apt install build-essential cmake ninja-build` <br/>
 macos homebrew: `brew install cmake ninja`
 
-`git clone "https://boringssl.googlesource.com/boringssl"
-cd boringssl
-cmake -GNinja -B build -DCMAKE_BUILD_TYPE=Release
-ninja -C build`
+`git clone "https://boringssl.googlesource.com/boringssl"` <br/>
+`cd boringssl` <br/>
+`cmake -GNinja -B build -DCMAKE_BUILD_TYPE=Release` <br/>
+`ninja -C build`
 
 bssl is in ./build
 
 **to run server:**
+start_server.sh should be in boringssl/build
 ====================================================
 `./start_server.sh`
 
@@ -23,6 +24,7 @@ in a separate window, htop (we are looking at cumulative CPU time):
 `htop -p <pid>`
 
 **to run client:**
+client.sh should be in boringssl/build
 ====================================================
 The first parameter is the number of connections to the server.
 The second parameter is the type of key exchange (classical or hybrid)
