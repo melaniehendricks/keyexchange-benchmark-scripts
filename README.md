@@ -15,14 +15,14 @@ bssl is in ./build
 **to run server:** <br/>
 ====================================================
 start_server.sh should be in boringssl/build/ <br/>
-`./start_server.sh`
+Run `./start_server.sh` in its own window <br/>
 
 
 Run `ps -ef | grep bssl ` <br/>
 This gets the pid (process id) for the serve. <br/>
 Take the first value since the second value is the parent pid <br/>
 
-Then run `htop -p <pid>` in a separate window for duration of first set of runs. <br/>
+Then run `htop -p <pid>` in a separate window. <br/>
 
 
 **to run client:** <br/>
@@ -31,6 +31,7 @@ client.sh should be in boringssl/build/ <br/>
 The first parameter is the number of connections to the server. <br/>
 The second parameter is the type of key exchange (classical or hybrid) <br/>
 
+Run client in its own window. <br/>
 `./start_client.sh 100000 classical` <br/>
 or <br/>
 `./start_client.sh 100000 hybrid` 
