@@ -17,10 +17,11 @@ bssl is in ./build
 start_server.sh should be in boringssl/build/ <br/>
 `./start_server.sh`
 
-in a separate window, htop (we are looking at cumulative CPU time):
-\# this gets the pid (process id) for the server (1st value since the 2nd is the parent pid) <br/>
+in a separate window, run `htop` command (we are looking at cumulative CPU time): <br/>
 `ps -ef | grep bssl ` <br/>
+this gets the pid (process id) for the server (take 1st value since the 2nd is the parent pid) <br/>
 
+Then run: <br/>
 `htop -p <pid>`
 
 **to run client:** <br/>
