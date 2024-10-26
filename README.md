@@ -12,7 +12,7 @@ macos homebrew: `brew install cmake ninja`
 
 bssl is in ./build
 
-**to run server:**
+**to run server:** <br/>
 start_server.sh should be in boringssl/build
 ====================================================
 `./start_server.sh`
@@ -23,7 +23,7 @@ in a separate window, htop (we are looking at cumulative CPU time):
 
 `htop -p <pid>`
 
-**to run client:**
+**to run client:** <br/>
 client.sh should be in boringssl/build
 ====================================================
 The first parameter is the number of connections to the server.
