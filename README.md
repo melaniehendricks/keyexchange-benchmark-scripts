@@ -27,7 +27,7 @@ Then run `htop -p <pid>` in a separate window. <br/>
 
 **to run client:** <br/>
 ====================================================
-client.sh should be in boringssl/build/ <br/>
+start_client.sh should be in boringssl/build/ <br/>
 The first parameter is the number of connections to the server. <br/>
 The second parameter is the type of key exchange (classical or hybrid) <br/>
 
