@@ -3,7 +3,7 @@
 **Instructions for installing boringssl**
 ===================================================
 linux: `apt install build-essential cmake ninja-build` <br/>
-macos homebrew: `brew install cmake ninja`
+macos homebrew: `brew install cmake ninja` <br/>
 
 `git clone "https://boringssl.googlesource.com/boringssl"` <br/>
 `cd boringssl` <br/>
@@ -14,7 +14,7 @@ bssl is in ./build
 
 **to run server:** <br/>
 ====================================================
-start_server.sh should be in boringssl/build <br/>
+start_server.sh should be in boringssl/build/ <br/>
 `./start_server.sh`
 
 in a separate window, htop (we are looking at cumulative CPU time):
@@ -25,13 +25,13 @@ in a separate window, htop (we are looking at cumulative CPU time):
 
 **to run client:** <br/>
 ====================================================
-client.sh should be in boringssl/build <br/>
+client.sh should be in boringssl/build/ <br/>
 The first parameter is the number of connections to the server. <br/>
 The second parameter is the type of key exchange (classical or hybrid) <br/>
 
 `./start_client.sh 100000 classical` <br/>
-or 
-`./start_client.sh 100000 hybrid` <br/>
+or <br/>
+`./start_client.sh 100000 hybrid` 
 
 
 
