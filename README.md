@@ -3,7 +3,7 @@
 **Instructions for installing boringssl**
 ===================================================
 linux: `apt install build-essential cmake ninja-build` <br/>
-macos homebrew: `brew install cmake ninja` <br/>
+macOS (homebrew): `brew install cmake ninja` <br/>
 
 `git clone "https://boringssl.googlesource.com/boringssl"` <br/>
 `cd boringssl` <br/>
